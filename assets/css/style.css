@@ -1,0 +1,78 @@
+:root {
+  --darkR: #9c4c43;
+  --lightR: #bc8a84;
+  --medR: #a96962;
+  --darkg: #47554d;
+  --medg: #62746a;
+  --lightg: #dbe0d2;
+  --purp: #7b7d84;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  font-family: Optima, Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--lightR);
+  padding: 2%;
+  font-family: Optima, Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header li {
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+
+figure img {
+  display: flex;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+  align-items: center;
+}
+
+main {
+  background-color: var(--lightg);
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 20%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--darkR);
+  margin: 20px;
+  flex: 0 0 300px;
+  align-items: baseline;
+}
+
+h2 {
+  border-style: solid;
+  padding: 5px;
+}
+section p {
+  border-style: solid;
+  padding: 5px;
+}
