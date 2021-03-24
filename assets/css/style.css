@@ -1,3 +1,4 @@
+/* color palette, although not all were used */
 :root {
   --darkR: #9c4c43;
   --lightR: #bc8a84;
@@ -9,11 +10,13 @@
   --yellow: #c2a15d;
 }
 
+
 body {
   line-height: 1.4;
   font-family: Optima, Arial, Helvetica, sans-serif;
 }
 
+/* header design*/
 header {
   display: flex;
   justify-content: space-between;
@@ -35,12 +38,14 @@ nav ul {
   display: flex;
 }
 
+/* to separate name(h1) from the nav list */
 nav ul li {
   justify-content: space-between;
   padding: 10px;
   text-align: center;
 }
 
+/* banner/background characteristics */
 figure img {
   display: flex;
   height: 180px;
@@ -55,10 +60,9 @@ main {
   flex-direction: column;
 }
 
+
+/* theme for all my sections, biggest containers with bulk of the info */
 section {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-start; */
   padding: 2%;
   background-color: var(--medR);
   margin: 10px;
@@ -69,11 +73,10 @@ section p {
   padding: 1%;
 }
 
+/* used header as a main component in sections */
 h2 {
   padding: 6px;
   font-size: 200%;
-  /* text-align: center; */
-  /* background-color: var(--darkg); */
   color: black;
   border-color: var(--darkg);
   min-width: 160px;
@@ -81,6 +84,7 @@ h2 {
   flex-wrap: wrap;
   line-height: 1.2;
 }
+
 
 section ul {
   padding: 1%;
@@ -90,6 +94,7 @@ section ul {
   display: flex;
 }
 
+/* buttons for contacting me */
 section ul li {
   min-width: 20px;
   background-color: var(--yellow);
@@ -97,7 +102,7 @@ section ul li {
   margin: 15px;
   font-size: 18px;
   border-radius: 5px;
-  font: bold;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -107,6 +112,7 @@ a {
   margin: auto;
 }
 
+/* helped align img elements and displayed them */
 .mainwork {
   display: block;
   width: 100%;
@@ -114,6 +120,7 @@ a {
   border-radius: 0 25px 25px 0;
 }
 
+/* layout for more or less all of my sections and sub-sections(it took me 3 days to figure it out, hence the name) */
 .annoying {
   display: flex;
   flex-direction: row;
@@ -121,6 +128,7 @@ a {
   margin: 1%;
 }
 
+/* work section headings */
 h3 {
   background-color: var(--yellow);
   padding: 2%;
@@ -146,8 +154,35 @@ h3 {
   justify-content: flex-start;
 }
 
+/* hire me heading */
 figcaption {
   background-color: var(--yellow);
   text-align: center;
-  padding: 1%;
 }
+
+/* responsive design alterations, modified from original screen */
+@media screen and (max-width: 768px) {
+  main,
+  header,
+  nav ul {
+    flex-direction: column;
+  }
+  figcaption {
+    display: none;
+  }
+  .annoying {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section h3 {
+    border-radius: 25px 25px 0 0;
+  }
+  .mainwork {
+    border-radius: 0 0 25px 25px;
+  }
+  .contactCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
