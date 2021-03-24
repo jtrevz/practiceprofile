@@ -139,3 +139,15 @@ h3 {
 .left {
   color: var(--medR);
 }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+figcaption {
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 1%;
+}
