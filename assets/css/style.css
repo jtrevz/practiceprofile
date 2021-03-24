@@ -1,11 +1,12 @@
 :root {
   --darkR: #9c4c43;
   --lightR: #bc8a84;
-  --medR: #a96962;
+  --medR: #9e9772;
   --darkg: #47554d;
   --medg: #62746a;
-  --lightg: #dbe0d2;
+  --lightg: #756b35;
   --purp: #7b7d84;
+  --yellow: #c2a15d;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--lightR);
+  background-color: var(--lightg);
   padding: 2%;
   font-family: Optima, Arial, Helvetica, sans-serif;
   align-items: center;
@@ -55,16 +56,14 @@ main {
 }
 
 section {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
+  justify-content: flex-start; */
   padding: 2%;
   background-color: var(--medR);
   margin: 10px;
-  justify-content: flex-start;
   border-radius: 10px;
 }
-
-
 
 section p {
   padding: 1%;
@@ -73,30 +72,70 @@ section p {
 h2 {
   padding: 6px;
   font-size: 200%;
-  text-align: center;
-  background-color: var(--darkg);
-  color: var(--lightg);
+  /* text-align: center; */
+  /* background-color: var(--darkg); */
+  color: black;
   border-color: var(--darkg);
   min-width: 160px;
   border-radius: 10px 0 0 10px;
   flex-wrap: wrap;
+  line-height: 1.2;
 }
 
 section ul {
-  display: flex;
   padding: 1%;
-  background-color: yellow;
-  width: fit-content;
+}
+
+.contactCard {
+  display: flex;
 }
 
 section ul li {
   min-width: 20px;
-  border: solid;
-  padding: 10px;
-  background-color: green;
-  margin: 5px;
+  background-color: var(--yellow);
+  padding: 15px;
+  margin: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  font: bold;
 }
 a {
   text-decoration: none;
   color: black;
+}
+.center {
+  margin: auto;
+}
+
+.mainwork {
+  display: block;
+  width: 100%;
+  align-items: center;
+  border-radius: 0 25px 25px 0;
+}
+
+.annoying {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1%;
+}
+
+h3 {
+  background-color: var(--yellow);
+  padding: 2%;
+  border-radius: 25px 0 0 25px;
+}
+
+.workflex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.otherwork {
+  max-height: 50px;
+}
+
+.left {
+  color: var(--medR);
 }
